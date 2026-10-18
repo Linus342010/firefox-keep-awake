@@ -17,7 +17,7 @@ systemd, `playerctl`, or additional packages.
 Add the plugin repository with Omarchy:
 
 ```sh
-omarchy plugin add https://github.com/OWNER/REPOSITORY.git --enable
+omarchy plugin add https://github.com/Linus342010/firefox-keep-awake.git --enable
 ```
 
 To remove it later:
