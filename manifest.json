@@ -7,6 +7,7 @@
   "license": "Unlicense",
   "description": "Keeps Omarchy idle actions paused while Firefox is playing media.",
   "kinds": ["service"],
+  "keepLoaded": true,
   "entryPoints": {
     "service": "Service.qml"
   }

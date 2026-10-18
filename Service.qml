@@ -91,21 +91,15 @@ Item {
     }
   }
 
-  Process {
-    id: shutdownCleanup
-    manageLifetime: false
-  }
-
   Component.onCompleted: root.run(["test", "-e", root.ownershipPath], "ownership-marker")
 
   Component.onDestruction: {
     if (!root.ownsStayAwake) return
 
-    shutdownCleanup.command = [
+    Quickshell.execDetached([
       "bash", "-c",
       "omarchy toggle idle allow-idle >/dev/null 2>&1; rm -f -- \"$1\"",
       "firefox-keep-awake-cleanup", root.ownershipPath
-    ]
-    shutdownCleanup.running = true
+    ])
   }
 }
