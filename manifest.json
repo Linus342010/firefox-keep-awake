@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "io.github.linus342010.firefox-keep-awake",
+  "id": "linus342010.firefox-keep-awake",
   "name": "Firefox Keep Awake",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Linus342010",
   "license": "Unlicense",
-  "description": "Keeps Omarchy idle actions paused while Firefox is playing media.",
+  "description": "Keeps Omarchy idle actions paused while Firefox based browsers are playing media.",
   "kinds": ["service"],
   "entryPoints": {
     "service": "Service.qml"
