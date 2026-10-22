@@ -20,7 +20,7 @@ omarchy plugin add https://github.com/Linus342010/firefox-keep-awake.git --enabl
 To remove it later:
 
 ```sh
-omarchy plugin remove linus342010.firefox-keep-awake
+omarchy plugin remove io.github.linus342010.firefox-keep-awake
 ```
 
 Omarchy manages the plugin files and enabled state. The source repository is
